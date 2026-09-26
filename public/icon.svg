@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="50%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="flagOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF9933"/>
+      <stop offset="100%" stop-color="#FF6600"/>
+    </linearGradient>
+    <linearGradient id="flagGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#138808"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background Rounded Base -->
+  <rect width="512" height="512" rx="110" fill="url(#bgGrad)"/>
+
+  <!-- Top Tricolor Accent Arc -->
+  <path d="M 120 48 Q 256 36 392 48" stroke="url(#flagOrange)" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.9"/>
+  <path d="M 120 464 Q 256 476 392 464" stroke="url(#flagGreen)" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.9"/>
+
+  <!-- Robot Head Outline / Support Headset -->
+  <g filter="url(#shadow)" transform="translate(0, 8)">
+    <!-- Head Body -->
+    <rect x="136" y="140" width="240" height="200" rx="48" fill="#FFFFFF"/>
+    
+    <!-- Face Screen -->
+    <rect x="160" y="168" width="192" height="120" rx="24" fill="#0f172a"/>
+
+    <!-- Glowing Friendly AI Eyes -->
+    <circle cx="212" cy="224" r="20" fill="#38bdf8"/>
+    <circle cx="216" cy="220" r="6" fill="#ffffff"/>
+    
+    <circle cx="300" cy="224" r="20" fill="#38bdf8"/>
+    <circle cx="304" cy="220" r="6" fill="#ffffff"/>
+
+    <!-- Soft Smile -->
+    <path d="M 232 260 Q 256 276 280 260" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+    <!-- Headset Band -->
+    <path d="M 112 210 Q 112 110 256 110 Q 400 110 400 210" stroke="#94a3b8" stroke-width="14" stroke-linecap="round" fill="none"/>
+
+    <!-- Headset Earcups -->
+    <rect x="100" y="196" width="30" height="70" rx="15" fill="#f59e0b"/>
+    <rect x="382" y="196" width="30" height="70" rx="15" fill="#f59e0b"/>
+
+    <!-- Microphone Boom -->
+    <path d="M 114 246 Q 114 360 210 360" stroke="#94a3b8" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <rect x="210" y="348" width="32" height="24" rx="8" fill="#ef4444"/>
+
+    <!-- Antennas / Signals -->
+    <circle cx="256" cy="76" r="14" fill="#38bdf8"/>
+    <line x1="256" y1="90" x2="256" y2="110" stroke="#94a3b8" stroke-width="6"/>
+
+    <!-- Badge / Collar -->
+    <rect x="196" y="360" width="120" height="32" rx="10" fill="#1e293b"/>
+    <text x="256" y="382" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#38bdf8" text-anchor="middle" letter-spacing="2">
+      BHARAT AI
+    </text>
+  </g>
+</svg>

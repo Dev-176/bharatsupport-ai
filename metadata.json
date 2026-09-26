@@ -1,0 +1,6 @@
+{
+  "name": "BharatSupport AI - Multilingual Customer Support Platform",
+  "description": "Enterprise-grade conversational AI platform for Indian SMBs. Understands Hindi, Hinglish, English, and regional languages with verified RAG knowledge retrieval and human escalation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
